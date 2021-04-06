@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --header-footer-color: rgb(10, 10, 46);
+  --header-footer-height: 100px;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+}
+
+header {
+  background-color: var(--header-footer-color);
+  height: var(--header-footer-height);
+}
+
+header img.boolean-logo {
+  width: 75px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: center;
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+main .card {
+  width: 250px;
+  border: black solid 1px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 250px 40px 125px;
+
+}
+
+main .card img.boolean-laptop {
+  width: 248px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 1;
+}
+
+main .card .top-images {
+  z-index: 2;
+  width: 250px;
+  height: 50px;
+  position: relative;
+}
+
+main .card img.boolean-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+
+main .card .card-icons {
+  display: grid;
+  grid-template-columns: 40px 40px;
+  justify-content: right;
+  margin-top: 8px;
+  margin-right: 4px;
+}
+
+main .card .card-text {
+  padding: 20px;
+}
+
+main .card .card-icons img.github,
+main .card .card-icons img.twitter {
+  width: 35px;
+  
+}
+
+main .card .card-icons img.github {
+  right: 50px;
+}
+
+main .card .card-bottom {
+  background-color: white;
+}
+
+footer {
+  background-color: var(--header-footer-color);
+  height: var(--header-footer-height);
+}
